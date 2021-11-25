@@ -31,13 +31,6 @@ folsA.addEventListener("click", noLink);
 
 const listLi = document.querySelector('.gallery');
 listLi.style.listStyleType = "none";
-// let imgData;
-// const imgBig = document.querySelector('.gallery');
-// imgBig.addEventListener('click', imgOpen);
-//   function imgOpen (event) {
-//     return imgData = event.target.getAttribute('data-source');
-//   }
-
 
   let gallery = new SimpleLightbox('.gallery a');
   gallery.on('show.simplelightbox', function () {
