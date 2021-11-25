@@ -32,7 +32,9 @@ folsA.addEventListener("click", noLink);
 const listLi = document.querySelector('.gallery');
 listLi.style.listStyleType = "none";
 
-  let gallery = new SimpleLightbox('.gallery a');
+  let gallery = new SimpleLightbox('.gallery a',{
+    nav: false,
+  });
   gallery.on('show.simplelightbox', function () {
-
+     
   });
