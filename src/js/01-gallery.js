@@ -33,7 +33,7 @@ const listLi = document.querySelector('.gallery');
 listLi.style.listStyleType = "none";
 
   let gallery = new SimpleLightbox('.gallery a',{
-    nav: false,
+    captionData: 'title', captions: true, captionSelector: 'img',
   });
   gallery.on('show.simplelightbox', function () {
      

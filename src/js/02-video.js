@@ -16,12 +16,21 @@ const onPlay = function(data) {
 
 player.on('play', onPlay);
 
+
 player.on('timeupdate', function(data) {
-    localStorage.setItem('videoplayer-current-time', data.seconds)
-    localStorage_.throttle(() => {
+    localStorage.setItem('videoplayer-current-time', data.seconds);
+    _.throttle(() => {
         console.log("Scroll handler call every 1000ms");
       }, 1000)
 });
+
+
+
+
+
+// const throttlePause = _.throttle(player.on, 1000);
+// console.log('100ms', throttlePause);
+// window.addEventListener('play', throttlePause);
 
 const currentTime = localStorage.getItem('videoplayer-current-time');
 
